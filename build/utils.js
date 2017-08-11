@@ -25,7 +25,7 @@ exports.cssLoaders = function (options) {
             return loader + (options.sourceMap ? extraParamChar + 'sourceMap' : '')
         }).join('!')
 
-        return sourceLoader
+        //return sourceLoader
 
         // Extract CSS when that option is specified
         // (which is the case during production build)
