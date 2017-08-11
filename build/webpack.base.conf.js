@@ -5,11 +5,6 @@ var config = require('../config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    //entry: [
-    //    'eventsource-polyfill',
-    //    'webpack-hot-middleware/client?reload=true',
-    //    './src/index'
-    //],
     entry: {
         app: './src/main.js'
     },
@@ -20,17 +15,6 @@ module.exports = {
             ? config.build.assetsPublicPath
             : config.dev.assetsPublicPath
     },
-    //plugins: [
-    //    new webpack.optimize.OccurenceOrderPlugin(),
-    //    new webpack.HotModuleReplacementPlugin(),
-    //    new webpack.NoErrorsPlugin(),
-    //    // https://github.com/ampedandwired/html-webpack-plugin
-    //    new HtmlWebpackPlugin({
-    //        filename: 'index.html',
-    //        template: 'index.html',
-    //        inject: true
-    //    }),
-    //],
     module: {
         loaders: [
             {
